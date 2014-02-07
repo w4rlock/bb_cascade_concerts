@@ -1,0 +1,13 @@
+<model>
+	<head header="Region">
+	    <item label="Argentina" img="img/flag/ar.png" val="blues"/>
+	    <item label="Brazil" img="img/flag/br.png" val="blues"/>
+	    <item label="Germany" img="img/flag/de.png" val="blues"/>
+	    <item label="Finland" img="img/flag/fi.png" val="blues"/>
+		<item label="Moscow" img="img/flag/ru.png" val="blues"/>
+		<item label="Norway" img="img/flag/no.png" val="blues"/>
+	    <item label="Spain" img="img/flag/es.png" val="blues"/>
+	    <item label="UK" img="img/flag/uk.png" val="blues"/>
+	    <item label="USA" img="img/flag/us.png" val="blues"/>
+    </head>
+</model>

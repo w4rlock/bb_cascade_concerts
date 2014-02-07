@@ -1,0 +1,6 @@
+<model>
+	<head header="Genre">
+	    <item label="Metal" img="heavy_guitar.jpg" val="blues"/>
+	   	<item label="Blues and Rock" img="jazz_guitar.jpg" val="jazz"/>
+   	</head>
+</model>
