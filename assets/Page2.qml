@@ -19,12 +19,14 @@ import bb.system 1.2
 import org.webimageview 1.0
 
     Page {
+        id: page22
         property  alias title : title.setTitle
+        property string evento
         titleBar: MyTitleBar {
             id: title
         }
         Container {
-            layout: StackLayout { }
+           layout: StackLayout { }
             /*
             WebImageView {
                 preferredHeight: 190
@@ -52,7 +54,7 @@ import org.webimageview 1.0
 */        
             ListView {
                 dataModel: XmlDataModel { source: "music_model.xml" }
-                listItemComponents: [
+               	listItemComponents: [
                     ListItemComponent {
                         type: "item"
                         StandardListItem {
@@ -64,10 +66,26 @@ import org.webimageview 1.0
                 
                 ]
                 onTriggered: {
+                    myQmlToast.show();
+                    
                     var item = dataModel.data(indexPath);
-                    page3.title = item.label + " Concerts"
-                    navigation.push(page3);
+                    page22.evento = "http://floating-wave-1462.herokuapp.com/concerto/" + item.val;
+                    var page = page3.createObject();
+                    page.title = item.label + " Concerts";
+                    navigation.push(page);
                 }
             }
         } 
+        attachedObjects: [
+        	ComponentDefinition {
+        	    id: page3
+            	source: 'Page3.qml' 
+            },
+        	SystemToast {
+                id: myQmlToast
+                body: "Cargando..."
+                onFinished: {
+                }
+            }
+        ]
     }

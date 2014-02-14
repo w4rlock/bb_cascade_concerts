@@ -61,7 +61,10 @@ lupdate_inclusion {
              $$quote($$BASEDIR/../assets/img/*.qs) \
              $$quote($$BASEDIR/../assets/img/flag/*.qml) \
              $$quote($$BASEDIR/../assets/img/flag/*.js) \
-             $$quote($$BASEDIR/../assets/img/flag/*.qs)
+             $$quote($$BASEDIR/../assets/img/flag/*.qs) \
+             $$quote($$BASEDIR/../assets/img/genre/*.qml) \
+             $$quote($$BASEDIR/../assets/img/genre/*.js) \
+             $$quote($$BASEDIR/../assets/img/genre/*.qs)
 
     HEADERS +=  $$quote($$BASEDIR/../src/*.h) \
              $$quote($$BASEDIR/../src/*.h++) \

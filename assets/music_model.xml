@@ -1,6 +1,20 @@
 <model>
 	<head header="Genre">
-	    <item label="Metal" img="heavy_guitar.jpg" val="blues"/>
-	   	<item label="Blues and Rock" img="jazz_guitar.jpg" val="jazz"/>
+	   	<item label="Clásica, Lírica" img="jazz_guitar.jpg" val="clasicc"/>
+	   	<item label="Electronica" img="jazz_guitar.jpg" val="electro"/>
+	   	<item label="Fiestas" img="jazz_guitar.jpg" val="fiesta"/>
+	   	<item label="Folklore" img="img/genre/folklore.jpg" val="folklore"/>
+	   	<item label="Internacional" img="jazz_guitar.jpg" val="interint"/>
+	   	<item label="Jazz, Blues, Soul, Hip-Hop" img="jazz_guitar.jpg" val="jazblues"/>
+	   	<item label="Metal" img="heavy_guitar.jpg" val="metal"/>
+	   	<item label="Nacional" img="jazz_guitar.jpg" val="rocknac"/>
+	   	<item label="Pop" img="jazz_guitar.jpg" val="pop"/>
+	   	<item label="Punk" img="jazz_guitar.jpg" val="punk"/>
+	   	<item label="Reggae" img="jazz_guitar.jpg" val="reggae"/>
+	   	<item label="Rock Internacional" img="jazz_guitar.jpg" val="rockint"/>
+	   	<item label="Rock Nacional" img="jazz_guitar.jpg" val="internac"/>
+	   	<item label="Romántica" img="jazz_guitar.jpg" val="romantic"/>
+	   	<item label="Tango" img="jazz_guitar.jpg" val="tango"/>
+	   	<item label="Tropical" img="jazz_guitar.jpg" val="tropica"/>
    	</head>
 </model>

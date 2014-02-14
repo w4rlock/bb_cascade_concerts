@@ -21,7 +21,7 @@ Container {
     }
     Label {
         verticalAlignment: VerticalAlignment.Bottom
-        text: ListItemData.band //"Jerikooo"
+        text: ListItemData.band
         multiline: true
         textStyle{
             color: Color.White

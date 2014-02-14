@@ -54,6 +54,9 @@
 
     <!--  Name of author which is used for signing. Must match the developer name of your development certificate. -->
     <author>Example Inc.</author>
+    <splashScreens>
+       <image>splash.jpeg</image>
+    </splashScreens>
     <icon>
        <image/>
        <image>icon.png</image>
@@ -94,6 +97,7 @@
     <asset path="translations" dest="qm">
         <include name="*.qm"/>
     </asset>
+    <asset path="assets/768x1280/splash.jpeg">splash.jpeg</asset>
 
     <!-- Request permission to execute native code.  Required for native applications. -->
     <permission system="true">run_native</permission>

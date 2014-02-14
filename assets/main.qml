@@ -32,9 +32,7 @@ NavigationPane {
 	    }
 	}
     attachedObjects: [
-        Page2 { id: page2 },           
-        Page3 { id: page3 },
-        PageConcertDetail{ id: pageDetail}
+        Page2 { id: page2 }      
     ]
     /*
     onPopTransitionEnded: {

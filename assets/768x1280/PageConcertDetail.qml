@@ -6,24 +6,43 @@ Page {
     property alias band: lblBand.text
     property alias info: infoBand.text
     property alias title : title.setTitle
-    default property alias imagen : imagena.imageSource
         
     titleBar: MyTitleBar {
         id: title
     }
     Container {
-        layout: StackLayout {
-            orientation: orientation.TopToBottom
+        topPadding: 25
+        Container {
+            horizontalAlignment: HorizontalAlignment.Center
+            layout: DockLayout {}
+            WebImageView {
+                id: imagena
+                preferredHeight: 450
+                preferredWidth: 550
+                url: page3.imgurl
+                horizontalAlignment: HorizontalAlignment.Center
+            }
+            Container {
+                opacity: .5
+                preferredHeight: 60
+                preferredWidth: imagena.preferredWidth
+                background: Color.Black
+            }
+            Label {
+                id: lblBand
+                textStyle.color: Color.White
+                horizontalAlignment: HorizontalAlignment.Center
+                textStyle.fontWeight: FontWeight.Bold
+            }
         }
-        Label {
-            id: lblBand
-        }
-        WebImageView {
-            id: imagena
-        }
-        Label {
-            id: infoBand
-            multiline: true
+       
+        
+        Container {
+            leftPadding: 30
+            Label {
+                id: infoBand
+                multiline: true
+            }
         }
     }
 }

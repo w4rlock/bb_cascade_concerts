@@ -1,27 +1,48 @@
 import bb.cascades 1.2
+import org.webimageview 1.0
 
 Page {
-    property alias title : title.setTitle
+
     property alias band: lblBand.text
-    property alias img: imgBand.imageSource
     property alias info: infoBand.text
-    
+    property alias title : title.setTitle
+        
     titleBar: MyTitleBar {
         id: title
     }
     Container {
-        layout: StackLayout {
-            orientation: orientation.TopToBottom
+        topPadding: 25
+        Container {
+            horizontalAlignment: HorizontalAlignment.Center
+            layout: DockLayout {}
+            WebImageView {
+                id: imagena
+                preferredHeight: 450
+                preferredWidth: 550
+                url: page3.imgurl
+                horizontalAlignment: HorizontalAlignment.Center
+            }
+            Container {
+                opacity: .5
+                preferredHeight: 60
+                preferredWidth: imagena.preferredWidth
+                background: Color.Black
+            }
+            Label {
+                id: lblBand
+                textStyle.color: Color.White
+                horizontalAlignment: HorizontalAlignment.Center
+                textStyle.fontWeight: FontWeight.Bold
+            }
         }
-        Label {
-            id: lblBand
-        }
-        ImageView {
-            id: imgBand
-        }
-        Label {
-            id: infoBand
-            multiline: true
+       
+        
+        Container {
+            leftPadding: 30
+            Label {
+                id: infoBand
+                multiline: true
+            }
         }
     }
 }
