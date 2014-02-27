@@ -56,11 +56,9 @@ Page {
             ]
             onTriggered: {
                 var item = dataModel.data(indexPath);
-                page3.imgurl = item.img
+                //page3.imgurl = item.img
                 var detail = pageDetail.createObject()
-                detail.title = "Detalle"
                 detail.band = item.band
-                detail.info = item.info
                 navigation.push(detail);
             }
             
@@ -76,7 +74,7 @@ Page {
             //source: "http://www.ticketmaster.de/browseQueryHandler.php?language=de-de&type=EventQuery&cat=10001&g=Hard%20%26%20Heavy&location=coun_all&rdc_select=ALL"
             //source: "http://api.songkick.com/api/3.0/events.json?apikey=iA8WsWkCgmAUHnl6&location=sk:32911"
             //source: "http://localhost/concert/public/index.php/region/bs_as"
-            source: page22.evento//"http://node-w4rlock.rhcloud.com/concerto/"
+            source: pageMain.evento//"http://node-w4rlock.rhcloud.com/concerto/"
             type: DataSourceType.Json
             onDataLoaded: {
                 listViewDemo.dataModel.clear();
@@ -94,7 +92,6 @@ Page {
     ]
     
     onCreationCompleted: {
-        console.log(page22.evento)
         serviceDataSource.load();
     }
 }
